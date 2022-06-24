@@ -11018,7 +11018,7 @@ h5,
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -10px;
-    color: rgba(0, 0, 0, 0.1) !important;
+    color: transparent !important;
     -webkit-transition: 0.7s;
     -o-transition: 0.7s;
     transition: 0.7s;
@@ -11100,7 +11100,7 @@ h5,
 
 .blog-entry {
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
 }
 
 .blog-entry .text {

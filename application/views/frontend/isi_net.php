@@ -8,14 +8,43 @@
     h1 {
         color: black;
     }
+
+    @media (min-width: 700px) {
+        .logo-header-h {
+            height: 700px;
+            margin-left: 300px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 680px;
+            margin-left: -30px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 100px;
+        }
+    }
 </style>
 <header id="header-h" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl  d-flex align-items-center">
 
-        <div id="logo" class="me-auto">
+        <div id="logo" class="logo mx-auto">
             <!-- Uncomment below if you prefer to use a text logo -->
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo.png" alt="" title=""></a>
+            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
 
         <nav id="navbar-h" class="navbar-h order-last order-lg-0">
@@ -37,13 +66,14 @@
     <div class="row">
         <div class="col-md-4">
             <h1><b>Logo</b></h1>
-            <div class="card">
-                <img src="<?= base_url() ?>assets/foto/thumbnail/<?= $network->image ?>" alt="Hotel 1" class="img-fluid" style="height: 150px;">
-            </div>
+
+            <img src="<?= base_url() ?>assets/foto/thumbnail/<?= $network->image ?>" alt="Hotel 1" class="img-fluid" style="height: 150px; width: 180px;">
+
         </div>
         <div class="col-md-8">
-            <h1><b>About Us</b></h1>
+
             <div class="card-body">
+                <h1><b>About Us</b></h1>
                 <div class="small text-muted"><?= $network->founded ?></div>
                 <h2 class="card-title"><?= $network->title ?></h2>
                 <p class=""><?= $network->about ?></p>

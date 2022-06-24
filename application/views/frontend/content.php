@@ -3,6 +3,44 @@
     a {
         color: black;
     }
+
+    .fram {
+        width: 100%;
+        height: 550px;
+    }
+
+    @media (max-width: 1700px) {
+        .fram {
+            position: relative;
+            width: 80%;
+            overflow: hidden;
+            margin-left: 130px;
+
+            /* 16:9 Aspect Ratio */
+        }
+
+    }
+
+    @media (max-width: 730px) {
+        .fram {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-left: 27px;
+            height: 50%;
+            /* 16:9 Aspect Ratio */
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        .fram {
+            width: 88%;
+            height: 200px;
+            margin-left: 20px;
+        }
+
+    }
 </style>
 <header id="header-h" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl  d-flex align-items-center">
@@ -10,7 +48,7 @@
         <div id="logo" class="me-auto">
             <!-- Uncomment below if you prefer to use a text logo -->
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo.png" alt="" title=""></a>
+            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
 
         <nav id="navbar-h" class="navbar-h order-last order-lg-0">
@@ -29,11 +67,12 @@
 
 <!-- Page content-->
 <div class="container">
-    <div class="row">
-        <div class="col-md-9 mx-auto">
-            <a href="#!"><iframe class="card-img-top" src="<?= $content->post_link ?>" width="400" height="550" alt="..."></iframe></a>
+    <div class="cont">
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item fram" src="<?= $content->post_link ?>"></iframe>
         </div>
     </div>
+
 
     <div class="row">
         <!-- Blog entries-->

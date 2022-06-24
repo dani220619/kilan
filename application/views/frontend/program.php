@@ -12,10 +12,30 @@
         height: 60px;
     }
 
-    .program {
-        margin-left: 15px;
-        margin-bottom: 30px;
+    @media (max-width: 700px) {
+        .program {
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
     }
+
+    @media (max-width: 1200px) {
+        .program {
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        .program {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+
+    }
+
 
     .prog {
         padding-left: 40px;
@@ -48,7 +68,7 @@
         <div id="logo" class="me-auto">
             <!-- Uncomment below if you prefer to use a text logo -->
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo.png" alt="" title=""></a>
+            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
@@ -138,7 +158,8 @@
                 foreach ($post as $a) : ?>
                     <div class="card-deck program" style="width: 18rem; ">
                         <div class="card" style="width: 18rem;">
-                            <img src="<?= base_url('assets/foto/thumbnail/' . $a->post_thumbnail . '') ?>" class="card-img-top" alt="..." style="height: 300px;">
+                            <img src="<?= base_url('assets/foto/thumbnail/' . $a->post_thumbnail . '') ?>" class="card-img-top" alt="..." style="height: 300px;
+width: 286px;">
                             <div class="card-body">
                                 <h5 class="title"><?= $a->post_title ?></h5>
                             </div>

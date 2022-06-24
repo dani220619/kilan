@@ -34,7 +34,7 @@
         <div id="logo" class="me-auto">
             <!-- Uncomment below if you prefer to use a text logo -->
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo.png" alt="" title=""></a>
+            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">

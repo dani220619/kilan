@@ -22,7 +22,7 @@
   <link href="<?= base_url() ?>assets/template/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="<?= base_url() ?>assets/template/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="<?= base_url() ?>assets/template/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="<?= base_url() ?>assets/js/core/jquery.3.2.1.min.js"></script>
   <!-- Template Main CSS File -->
   <link href="<?= base_url() ?>assets/template/assets/css/style.css" rel="stylesheet">
 

@@ -2,11 +2,11 @@
   <footer id="footer">
       <div class="footer-top">
           <div class="container">
-              <div class="row">
+              <div class="row foot">
 
                   <div class="col-lg-3 col-md-6 footer-info">
                       <a href="<?= base_url() ?>">
-                          <img src="<?= base_url() ?>assets/template/assets/img/logo.png" alt="TheEvenet" style="height: 140px;">
+                          <img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="TheEvenet" style="height: 140px;">
                       </a>
                       <p>©2022 Kilan.id | All right reserved</p>
                   </div>
@@ -53,6 +53,19 @@
 
 
   </footer><!-- End  Footer -->
+  <style>
+      @media (max-width: 700px) {
+          .foot {
+              margin-left: 10px;
+          }
+      }
+
+      @media (max-width: 1200px) {
+          .foot {
+              margin-left: 10px;
+          }
+      }
+  </style>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
