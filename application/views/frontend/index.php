@@ -1,8 +1,8 @@
 <link href="<?= base_url() ?>assets/template/assets/content/content.css" rel="stylesheet">
 <link rel="stylesheet" href="<?= base_url() ?>assets/template/slider/css/owl.carousel.min.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/template/slider/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/template/slider/css/style.css">
+
+
+
 <style>
     @media (min-width: 700px) {
         .logo-header {
@@ -26,14 +26,26 @@
         }
     }
 
-    @media (max-width: 900px) {
+    @media (min-width: 1100px) {
         #header #logo img {
             max-height: 100px;
-            margin-right: 100px;
+            margin-right: 500px;
         }
     }
 
     @media (max-width: 700px) {
+        .energy {
+            color: white;
+            font-size: 90px;
+            font-weight: 50px;
+            font-size: 50px;
+            position: center;
+            text-align: left;
+            margin-left: 50px;
+        }
+    }
+
+    @media (max-width: 1200px) {
         .energy {
             color: white;
             font-size: 90px;
@@ -85,6 +97,13 @@
 
     }
 
+    @media (max-width: 1200px) {
+        .let {
+            margin-left: 50px;
+        }
+
+    }
+
     @media (min-width: 900px) {
         .let {
             margin-left: 300px;
@@ -124,23 +143,80 @@
 
     @media (max-width: 700px) {
         .open-gallery {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .open-program {
             width: 100%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .open-program {
+            width: 100%;
+        }
+    }
+
+    .open-program-gal {
+        text-justify: auto;
+        text-align: center;
+        color: #fff;
+        background: #f82249;
+        padding: 7px 22px;
+        border: 2px solid #f82249;
+        transition: all ease-in-out 0.3s;
+        font-weight: 600;
+        line-height: 1;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 650px) {
+        .open-program-gal {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 750px) {
+        .open-program-gal {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .open-program-gal {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #header {
+            left: -20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #hotels .hotel {
+            padding: 40px;
         }
     }
 </style>
 <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
-        <div id="logo" class="logo mx-auto">
+        <div id="logo" class="me-auto">
             <!-- Uncomment below if you prefer to use a text logo -->
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title="" class="logo-header"></a>
+            <a href="<?= base_url('') ?>" class="scrollto img"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
-        <nav id="navbar" class="navbar order-last order-lg-0">
+
+        <nav id="navbar" class="navbar order-last order-lg-0 nav">
             <ul>
                 <li><a class="nav-link scrollto active" href="#hotels">Program</a></li>
                 <li><a class="nav-link scrollto" href="#supporters">Network</a></li>
-                <li><a class="nav-link scrollto" href="#speakers">Gallery</a></li>
+                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
                 <li><a class="nav-link scrollto" href="<?= base_url('frontend/about_us') ?>">About Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -148,6 +224,7 @@
         <a class="buy-tickets scrollto" href="https://www.youtube.com/channel/UC5vFQKucDKcCyvsPAVD7vUg">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </header><!-- End Header -->
+
 <section id="hero">
     <div class="hero-containe mx-auto ino " data-aos="zoom-in" data-aos-delay="100">
         <h2 class="energy"><b class="">Energy of Innovation</b></h2>
@@ -164,13 +241,12 @@
         <div class="section-header">
             <h2>Program</h2>
         </div>
-
         <div class="col-md-10 mx-auto">
             <div class="featured-carousel owl-carousel">
                 <?php foreach ($category as $a) { ?>
                     <div class="item">
                         <div class="blog-entry">
-                            <div class="col-sm-12 col-lg-12 col-md-12 mx-auto">
+                            <div class="col-sm-10 col-lg-10 col-md-10 mx-auto">
                                 <div class="hotel mx-auto">
                                     <div class="hotel-img">
                                         <img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image ?>" alt="Hotel 1" class="img-fluid" style="height: 300px">
@@ -226,11 +302,11 @@ margin-right: 40px;">
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
-            <?php foreach ($gallery as $a) { ?>
-                <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image ?>" alt="Hotel 1" class="img-fluid" style="height: 250px;">
-                    <h3 class="open-gallery mx-auto"><a href="<?= base_url('frontend/list_gallery/') ?><?= $a->id ?>" style="color: white;font-size: 20px;"><?= $a->title ?></a></h3>
-                </div>
 
+            <?php foreach ($gallery as $a) { ?>
+                <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image ?>" alt="Hotel 1" class="img-fluid" style="height: 250px; width: 100%;">
+                    <h3 class="open-program-gal mx-auto"><a href="<?= base_url('frontend/list_gallery/') ?><?= $a->id ?>" style="color: white;font-size: 20px; width: auto;"><?= $a->title ?></a></h3>
+                </div>
             <?php } ?>
         </div>
         <div class="swiper-pagination"></div>

@@ -61,6 +61,54 @@
             padding: 0 15px;
         }
     }
+
+    @media (min-width: 700px) {
+        .logo-header {
+            height: 700px;
+            margin-left: 300px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        #header #logo img {
+            max-height: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #header #logo img {
+            max-height: 100px;
+            margin-right: 680px;
+            margin-left: -30px;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        #header #logo img {
+            max-height: 100px;
+            margin-right: 500px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #header {
+            left: -20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #hotels .hotel {
+            padding: 40px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #hero p {
+            font-size: 16px;
+            margin-left: 0px;
+        }
+    }
 </style>
 <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">

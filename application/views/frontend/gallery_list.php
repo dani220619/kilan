@@ -13,7 +13,7 @@
     }
 
     .program {
-        margin-left: 15px;
+        margin-left: 19px;
         margin-bottom: 30px;
     }
 
@@ -26,6 +26,15 @@
 
     h1 {
         margin-top: 30px;
+    }
+
+    @media (max-width: 991px) {
+        #hero h1 {
+            font-size: 34px;
+            margin-right: 80%;
+            margin-left: -60px;
+            margin-top: -190px;
+        }
     }
 </style>
 <header id="header" class="d-flex align-items-center ">

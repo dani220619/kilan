@@ -196,6 +196,7 @@ h6 {
 @media (max-width: 992px) {
     #header #logo img {
         max-height: 100px;
+        margin-right: 500px;
     }
 }
 
@@ -830,6 +831,7 @@ h6 {
 @media (max-width: 991px) {
     #hero p {
         font-size: 16px;
+        margin-left: 53px;
     }
 }
 
@@ -2214,6 +2216,20 @@ h6 {
     transition: all ease-in-out 0.3s;
     font-weight: 600;
     line-height: 2;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.open-program-gal {
+    text-justify: auto;
+    text-align: center;
+    color: #fff;
+    background: #f82249;
+    padding: 7px 22px;
+    border: 2px solid #f82249;
+    transition: all ease-in-out 0.3s;
+    font-weight: 600;
+    line-height: 1;
     font-size: 13px;
     white-space: nowrap;
 }
