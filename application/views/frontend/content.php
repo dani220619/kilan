@@ -9,12 +9,41 @@
         height: 550px;
     }
 
+    @media (min-width: 700px) {
+        .logo-header-h {
+            height: 700px;
+            margin-left: 300px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 680px;
+            margin-left: -30px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        #header-h #logo img {
+            max-height: 100px;
+            margin-right: 100px;
+        }
+    }
+
     @media (max-width: 1700px) {
         .fram {
             position: relative;
             width: 80%;
             overflow: hidden;
-            margin-left: 130px;
+            margin-left: 70px;
 
             /* 16:9 Aspect Ratio */
         }
@@ -66,8 +95,8 @@
 </header><!-- End Header -->
 
 <!-- Page content-->
-<div class="container">
-    <div class="cont">
+<div class="container mx-auto">
+    <div class="cont mx-auto">
         <div class="embed-responsive embed-responsive-21by9">
             <iframe class="embed-responsive-item fram" src="<?= $content->post_link ?>"></iframe>
         </div>
