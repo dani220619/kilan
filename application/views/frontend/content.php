@@ -82,9 +82,8 @@
 
         <nav id="navbar-h" class="navbar-h order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Program</a></li>
-                <li><a class="nav-link scrollto" href="#about">Network</a></li>
-                <li><a class="nav-link scrollto" href="#speakers">Gallery</a></li>
+                <li><a class="nav-link scrollto active" href="<?= base_url('frontend/index') ?>">Program</a></li>
+                <li><a class="nav-link scrollto" href="<?= base_url('frontend/gallery_list') ?>">Gallery</a></li>
                 <li><a class="nav-link scrollto" href="<?= base_url('frontend/about_us') ?>">About Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

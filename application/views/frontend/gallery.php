@@ -224,9 +224,9 @@
     </div>
 </header><!-- End Header -->
 
-<section id="hero">
+<section id="gallery_header">
     <div class="hero-containe mx-auto ino " data-aos="zoom-in" data-aos-delay="100">
-        <h2 class="energy"><b class="">Program</b></h2>
+        <h2 class="energy"><b class="">Gallery</b></h2>
         <!-- <p class="title tit">
             Energy of Innovation adalah tema yang kami perjuangkan
             untuk menceritakan proses inovasi teknologi dari
@@ -239,17 +239,14 @@
 
 <section id="gallery">
     <div class="container" data-aos="fade-up">
-        <h1><b>LINE UP</b></h1>
-        <p>Serial dokumenter pendek tentang perkembangan model
-            bisnis dan peluang lahirnya industri baru di Indonesia.
-        </p>
+        <h1><b>Socialware</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
 
-            <?php foreach ($line_up as $a) { ?>
-                <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
-                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
+            <?php foreach ($socialware as $a) { ?>
+                <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
         </div>
     <?php } ?>
@@ -260,17 +257,15 @@
 
 <section id="gallery" class="section-with-bg">
     <div class="container" data-aos="fade-up">
-        <h1><b>LIFE LIGHT</b></h1>
-        <p>Serial film pendek yang terinspirasi dari cara hidup para
-            inovator.
-        </p>
+        <h1><b>Education</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
-            <?php foreach ($life_light as $a) { ?>
-                <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
-                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
+            <?php foreach ($education as $a) { ?>
+                <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+
         </div>
     <?php } ?>
     </div>
@@ -280,16 +275,14 @@
 
 <section id="gallery">
     <div class="container" data-aos="fade-up">
-        <h1><b>AIRDROPS</b></h1>
-        <p>Video podcast yang membahas tentang bagaimana
-            proses inovasi bekerja dan berperan di masyarakat.
-        </p>
+        <h1><b>Innovation Product</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
-            <?php foreach ($airdrops as $a) { ?>
-                <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
-                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
+
+            <?php foreach ($inovation as $a) { ?>
+                <a href="<?= base_url('frontend/gallery_two/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
         </div>
     <?php } ?>
@@ -297,18 +290,18 @@
     <div class="swiper-pagination"></div>
     </div>
 </section><!-- End Gallery Section -->
+
 
 <section id="gallery" class="section-with-bg">
     <div class="container" data-aos="fade-up">
-        <h1><b>THE EXPERT</b></h1>
-        <p>Video jurnal yang mempresentasikan penemuan atau
-            pengalaman para pakar dari berbagai profesi. </p>
+        <h1><b>Artworks</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
-            <?php foreach ($the_expert as $a) { ?>
-                <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
-                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
+            <?php foreach ($artwork as $a) { ?>
+                <a href="<?= base_url('frontend/gallery_two/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
+
                 </a>
         </div>
     <?php } ?>
@@ -317,31 +310,12 @@
     </div>
 </section><!-- End Gallery Section -->
 
-<section id="gallery">
-    <div class="container" data-aos="fade-up">
-        <h1><b>BEYOND TECH</b></h1>
-        <p>Video kreatif dan film animasi dengan konsep techno
-            advertising. </p>
-    </div>
-    <div class="gallery-slider swiper">
-        <div class="swiper-wrapper align-items-center">
-
-            <?php foreach ($beyond_tech as $a) { ?>
-                <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
-                    <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
-                </a>
-        </div>
-    <?php } ?>
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-</section><!-- End Gallery Section -->
 
 <section id="hotels" class="section-with-bg">
     <div class="mx-auto">
         <div class="row find" data-aos="fade-up" data-aos-delay="100" style="margin-left: 40px;">
-            <h1>
-                Find your energy of innovation!
+            <h1><b>
+                    Find your energy of innovation!</b>
             </h1>
             <a href="https://wa.me/<?= $apl['tlp'] ?>" type="button" class="startup">Startup</a>
         </div>

@@ -266,4 +266,67 @@ class Mod_post extends CI_Model
         ");
         return $query;
     }
+    public function line_up()
+    {
+        $query = $this->db->query("
+       select * from posts where category_id = '1'
+        ");
+        return $query;
+    }
+    public function life_light()
+    {
+        $query = $this->db->query("
+       select * from posts where category_id = '2'
+        ");
+        return $query;
+    }
+    public function airdrops()
+    {
+        $query = $this->db->query("
+       select * from posts where category_id = '3'
+        ");
+        return $query;
+    }
+    public function the_expert()
+    {
+        $query = $this->db->query("
+       select * from posts where category_id = '4'
+        ");
+        return $query;
+    }
+    public function beyond_tech()
+    {
+        $query = $this->db->query("
+       select * from posts where category_id = '5'
+        ");
+        return $query;
+    }
+    public function socialware()
+    {
+        $query = $this->db->query("
+       select * from posts_gallery where gallery_id = '2'
+        ");
+        return $query;
+    }
+    public function education()
+    {
+        $query = $this->db->query("
+       select * from posts_gallery where gallery_id = '1'
+        ");
+        return $query;
+    }
+    public function inovation()
+    {
+        $query = $this->db->query("
+       select * from posts_gallery where gallery_id = '3'
+        ");
+        return $query;
+    }
+    public function artwork()
+    {
+        $query = $this->db->query("
+       select * from posts_gallery where gallery_id = '4'
+        ");
+        return $query;
+    }
 }

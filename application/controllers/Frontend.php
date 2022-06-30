@@ -16,13 +16,24 @@ class Frontend extends CI_Controller
     public function index()
     {
         $data['apl'] = $this->db->get('aplikasi')->row_array();
-        $data['category'] = $this->Mod_post->category()->result();
-        $data['network'] = $this->Mod_post->network()->result();
-        $data['gallery'] = $this->Mod_post->gallery()->result();
-        // dead($data['category']);
-        // $data['post'] = $this->Mod_post->show_post()->result();
+        $data['line_up'] = $this->Mod_post->line_up()->result();
+        $data['life_light'] = $this->Mod_post->life_light()->result();
+        $data['airdrops'] = $this->Mod_post->airdrops()->result();
+        $data['the_expert'] = $this->Mod_post->the_expert()->result();
+        $data['beyond_tech'] = $this->Mod_post->beyond_tech()->result();
         $this->load->view('templates/header_frontend.php', $data);
         $this->load->view('frontend/index', $data);
+        $this->load->view('templates/footer_frontend.php', $data);
+    }
+    public function gallery_list()
+    {
+        $data['apl'] = $this->db->get('aplikasi')->row_array();
+        $data['socialware'] = $this->Mod_post->socialware()->result();
+        $data['education'] = $this->Mod_post->education()->result();
+        $data['inovation'] = $this->Mod_post->inovation()->result();
+        $data['artwork'] = $this->Mod_post->artwork()->result();
+        $this->load->view('templates/header_frontend.php', $data);
+        $this->load->view('frontend/gallery', $data);
         $this->load->view('templates/footer_frontend.php', $data);
     }
 
