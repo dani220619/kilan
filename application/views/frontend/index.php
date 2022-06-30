@@ -340,8 +340,8 @@
 <section id="hotels" class="section-with-bg">
     <div class="mx-auto">
         <div class="row find" data-aos="fade-up" data-aos-delay="100" style="margin-left: 40px;">
-            <h1>
-                Find your energy of innovation!
+            <h1><b>
+                    Find your energy of innovation!</b>
             </h1>
             <a href="https://wa.me/<?= $apl['tlp'] ?>" type="button" class="startup">Startup</a>
         </div>
