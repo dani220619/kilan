@@ -35,41 +35,35 @@
     }
 
     .fram {
-        width: 50%;
-        height: 200px;
+
+        margin-left: 150px;
+
+        width: 1000px;
     }
 
-    @media (max-width: 1700px) {
-        .fram {
-            position: relative;
-            width: 80%;
-            overflow: hidden;
-            padding: -10px;
 
-            /* 16:9 Aspect Ratio */
-        }
-
-    }
 
     @media (max-width: 730px) {
         .fram {
             position: relative;
-            width: 100%;
+            width: 90%;
+            margin-left: 5%;
             overflow: hidden;
-            margin-left: 27px;
-            height: 50%;
-            /* 16:9 Aspect Ratio */
+            height: 80%;
         }
-
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
         .fram {
-            width: 88%;
-            height: 200px;
-            margin-left: 20px;
-        }
+            position: relative;
+            width: 90%;
+            /* margin-left: 15%; */
+            overflow: hidden;
+            height: 100%;
 
+
+            /* 16:9 Aspect Ratio */
+        }
     }
 </style>
 <header id="header-h" class="d-flex align-items-center ">
@@ -94,44 +88,60 @@
     </div>
 </header><!-- End Header -->
 
-<!-- Page network-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1><?= $cont_gallery->title ?></h1>
+<!-- Page content-->
+<div class="container mx-auto">
+    <div class="cont mx-auto">
+        <div class="embed-responsive embed-responsive-21by9">
+            <img src="<?= base_url() ?>assets/foto/thumbnail/<?= $cont_gallery->image ?>" alt="Hotel 1" class="img-fluid fram">
         </div>
     </div>
+
+    <br>
     <div class="row">
-        <div class="col-md-4">
-            <h4>Introduction Video </h4>
-
-            <a href="#!"><iframe class="embed-responsive-item fram" src="<?= $cont_gallery->link ?>" width="100" height="200" alt="..."></iframe></a>
-
-            <h4>Coach: <?= $cont_gallery->coach ?></h4>
-            <h4><?= rupiah($cont_gallery->harga) ?>/Class</h4>
-            <p><?= $cont_gallery->ket ?></p>
-            <a href="mailto:<?= $apl['email'] ?>" class="btn btn-success">Q & A</a>
-            <a href="https://wa.me/<?= $apl['tlp'] ?>" class="btn btn-danger">Get Started</a>
-        </div>
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-9">
-                    <p><?= $cont_gallery->discourse ?></p>
-                </div>
-                <div class="col-md-3">
-                    <h4>Category</h4>
-                    <p><?= $G->title ?></p>
-                    <h4>Format</h4>
-                    <p><?= $cont_gallery->format ?></p>
-                    <h4>Topic</h4>
-                    <p><?= $cont_gallery->topic ?></p>
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="small text-muted"><?= $cont_gallery->date ?></div>
+                    <h2 class="card-title"><?= $cont_gallery->title ?></h2>
+                    <p class="card-text"><?= $cont_gallery->discourse ?></p>
+                    <!-- <a class="btn btn-primary" href="#!">Read more →</a> -->
                 </div>
             </div>
-
+            <!-- Nested row for non-featured blog posts-->
+            <!-- Pagination-->
         </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Format</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!"><?= $cont_gallery->format ?></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
 
-
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Topic</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!"><?= $cont_gallery->topic ?></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
-</div>
 </div>

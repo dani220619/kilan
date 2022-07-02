@@ -248,6 +248,9 @@
                 <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row">
+                    <h6> <br><?= $a->title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -257,7 +260,7 @@
 
 <section id="gallery" class="section-with-bg">
     <div class="container" data-aos="fade-up">
-        <h1><b>Education</b></h1>
+        <h1><b>Humanware</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
@@ -265,6 +268,9 @@
                 <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row section-with-bg">
+                    <h6> <br><?= $a->title ?></h6>
+                </div>
 
         </div>
     <?php } ?>
@@ -275,15 +281,18 @@
 
 <section id="gallery">
     <div class="container" data-aos="fade-up">
-        <h1><b>Innovation Product</b></h1>
+        <h1><b>Hardware</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
 
             <?php foreach ($inovation as $a) { ?>
-                <a href="<?= base_url('frontend/gallery_two/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row">
+                    <h6> <br><?= $a->title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -294,15 +303,17 @@
 
 <section id="gallery" class="section-with-bg">
     <div class="container" data-aos="fade-up">
-        <h1><b>Artworks</b></h1>
+        <h1><b>Software</b></h1>
     </div>
     <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
             <?php foreach ($artwork as $a) { ?>
-                <a href="<?= base_url('frontend/gallery_two/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
+                <a href="<?= base_url('frontend/gallery/') ?><?= $a->slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->image  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
-
                 </a>
+                <div class="row section-with-bg">
+                    <h6> <br><?= $a->title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -311,7 +322,7 @@
 </section><!-- End Gallery Section -->
 
 
-<section id="hotels" class="section-with-bg">
+<section id="hotels">
     <div class="mx-auto">
         <div class="row find" data-aos="fade-up" data-aos-delay="100" style="margin-left: 40px;">
             <h1><b>

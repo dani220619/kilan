@@ -43,7 +43,7 @@
             position: relative;
             width: 80%;
             overflow: hidden;
-            margin-left: 70px;
+            margin-left: 90px;
 
             /* 16:9 Aspect Ratio */
         }

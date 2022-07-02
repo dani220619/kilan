@@ -251,6 +251,10 @@
                 <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+
+                <div class="row">
+                    <h6> <br><?= $a->post_title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -271,6 +275,10 @@
                 <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row section-with-bg">
+                    <h6> <br><?= $a->post_title ?></h6>
+                </div>
+
         </div>
     <?php } ?>
     </div>
@@ -291,6 +299,9 @@
                 <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row">
+                    <h6> <br><?= $a->post_title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -310,6 +321,9 @@
                 <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row section-with-bg">
+                    <h6> <br><?= $a->post_title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>
@@ -330,6 +344,9 @@
                 <a href="<?= base_url('frontend/content/') ?><?= $a->post_slug ?>" style="color: white;font-size: 20px; width: 400px;">
                     <div class="swiper-slide"><img src="<?= base_url() ?>assets/foto/thumbnail/<?= $a->post_thumbnail  ?>" alt="Hotel 1" class="img-fluid" style="height: 200px; width: 300px;">
                 </a>
+                <div class="row">
+                    <h6> <br><?= $a->post_title ?></h6>
+                </div>
         </div>
     <?php } ?>
     </div>

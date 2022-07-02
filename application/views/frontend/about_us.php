@@ -128,17 +128,54 @@
         }
     }
 
-    @media (max-width: 700px) {
-        .image_about {
-            margin-left: 50px;
+    .image_about {
+        height: 100%;
+        margin-left: 100px;
+        width: 50%;
+    }
 
-        }
+
+
+
+    .kilan {
+        height: 50%;
+        margin-left: 100px;
+        width: 40%;
     }
 
     @media (max-width: 700px) {
         .kilan {
-            margin-left: 7px;
+            height: 90%;
+            margin-left: 90px;
+            width: 50%;
+        }
+    }
 
+    .kilan2 {
+        height: 70%;
+        margin-left: 160px;
+        width: 50%;
+    }
+
+    @media (max-width: 700px) {
+        .kilan2 {
+            height: 70%;
+            margin-left: 90px;
+            width: 50%;
+        }
+    }
+
+    .kilan3 {
+        height: 70%;
+        margin-left: 160px;
+        width: 50%;
+    }
+
+    @media (max-width: 760px) {
+        .kilan3 {
+            height: 70%;
+            margin-left: 90px;
+            width: 50%;
         }
     }
 </style>
@@ -150,7 +187,6 @@
             <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
             <a href="<?= base_url('') ?>" class="scrollto"><img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" alt="" title=""></a>
         </div>
-
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li><a class="nav-link scrollto active" href="<?= base_url('frontend/index') ?>">Program</a></li>
@@ -160,15 +196,12 @@
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
         <a class="buy-tickets scrollto" href="https://www.youtube.com/channel/UC5vFQKucDKcCyvsPAVD7vUg">Subscribe <i class="fa-solid fa-arrow-right"></i></a>
-
     </div>
 </header><!-- End Header -->
 
 <section id="about_us">
 
     <div class="about_us-container" data-aos="zoom-in" data-aos-delay="100">
-
-
         <h1 class="ab">
             Innovation<br>
             Technology<br>
@@ -177,10 +210,7 @@
         <h1 class="ab">
             <a href="#about" class="btn btn-danger let" style="width: 150px; border-radius: 50px">Let’s Find Out!</a>
         </h1>
-
-
     </div>
-
     <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> -->
     <!-- <a href="#about" class="btn btn-danger" style="width: 150px; border-radius: 50px">Let’s Find Out!</a> -->
     </div>
@@ -198,11 +228,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-sm-12 col-lg-12 col-md-12" style="width: auto;">
-                <div class=" hotel mx-auto">
-                    <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about">
-                </div>
-            </div>
+
             <div class="col-md-7 mx-auto text">
                 <p><b>Kilan.id</b> adalah perusahaan media digital yang didedikasikan
                     untuk berbagi inspirasi perkembangan inovasi teknologi
@@ -219,6 +245,11 @@
                     Inovasi teknologi merupakan suatu karya yang diciptakan manusia
                     dengan kreativitas yang terukur. Tujuan para inovator adalah menjadikan kehidupan yang lebih baik. Oleh karenanya, kami ada untuk menceritakan kisah mereka yang luar biasa, yang tak terhitung, dan yang terabaikan
                     ketika berjuang dalam menemukan energi inovasi.</p>
+            </div>
+            <div class="col-sm-5 col-lg-5 col-md-5">
+                <div class=" hotel mx-auto">
+                    <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about">
+                </div>
             </div>
         </div>
     </div>
@@ -240,7 +271,7 @@
                 value dan ekspresi kreatif para inovator.
             </div>
             <div class="col-md-5">
-                <img src="<?= base_url() ?>assets/template/assets/img/logo-kilan.png" class="img-fluid kilan" alt="TheEvenet">
+                <img src="<?= base_url() ?>assets/template/assets/img/Mission.png" class="img-fluid kilan" alt="TheEvenet">
             </div>
         </div>
     </div>
@@ -256,9 +287,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <img src="<?= base_url() ?>assets/template/assets/img/love.png" alt="" class="img-fluid" style="width: auto;">
-            </div>
+
             <div class="col-md-6">
                 <h1><b>Trial</b></h1>
                 <p>Free consultation and production one of video
@@ -271,6 +300,9 @@
                 <h1><b>Potential</b></h1>
                 <p>Crowd funding, sponsor fees, and branded
                     content advertisement.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="<?= base_url() ?>assets/template/assets/img/Insertclip.png" alt="" class="img-fluid kilan2">
             </div>
         </div>
     </div>
@@ -299,12 +331,12 @@
                     to help build audience trust.</p>
             </div>
             <div class="col-md-5">
-                <img src="<?= base_url() ?>assets/template/assets/img/kilat.png" alt="" class="img-fluid ourser">
+                <img src="<?= base_url() ?>assets/template/assets/img/Blueprint.png" alt="" class="img-fluid kilan3">
             </div>
         </div>
     </div>
 </section>
-<section id="hotels" class="section-with-bg">
+<section id="hotels">
     <div class="mx-auto">
         <div class="row find" data-aos="fade-up" data-aos-delay="100" style="margin-left: 40px;">
             <h1><b>
