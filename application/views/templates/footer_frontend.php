@@ -34,10 +34,9 @@
 
                   <div class="col-lg-3 col-md-6 footer-contact">
                       <h4>Pages</h4>
-                      <ul>
-                          <p><a href="#hotels" style="color: white;">Program</a><br>
-                          <p><a href="#supporters" style="color: white;">Network</a><br>
-                          <p><a href="#speakers" style="color: white;">Gallery</a><br>
+                      <ul style="margin-left: -25px;">
+                          <p><a href="<?= base_url('frontend/index') ?>" style="color: white;">Program</a><br>
+                          <p><a href="<?= base_url('frontend/gallery_list') ?>" style="color: white;">Gallery</a><br>
                           <p><a href="<?= base_url('frontend/about_us') ?>" style="color: white;"> About Us</a><br>
 
 

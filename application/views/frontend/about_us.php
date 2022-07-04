@@ -248,7 +248,7 @@
             </div>
             <div class="col-sm-5 col-lg-5 col-md-5">
                 <div class=" hotel mx-auto">
-                    <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about">
+                    <!-- <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about"> -->
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@
                 value dan ekspresi kreatif para inovator.
             </div>
             <div class="col-md-5">
-                <img src="<?= base_url() ?>assets/template/assets/img/Mission.png" class="img-fluid kilan" alt="TheEvenet">
+                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Mission.png" class="img-fluid kilan" alt="TheEvenet"> -->
             </div>
         </div>
     </div>
@@ -302,7 +302,7 @@
                     content advertisement.</p>
             </div>
             <div class="col-md-6">
-                <img src="<?= base_url() ?>assets/template/assets/img/Insertclip.png" alt="" class="img-fluid kilan2">
+                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Insertclip.png" alt="" class="img-fluid kilan2"> -->
             </div>
         </div>
     </div>
@@ -331,7 +331,7 @@
                     to help build audience trust.</p>
             </div>
             <div class="col-md-5">
-                <img src="<?= base_url() ?>assets/template/assets/img/Blueprint.png" alt="" class="img-fluid kilan3">
+                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Blueprint.png" alt="" class="img-fluid kilan3"> -->
             </div>
         </div>
     </div>
