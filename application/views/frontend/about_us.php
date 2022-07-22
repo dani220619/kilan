@@ -130,17 +130,32 @@
 
     .image_about {
         height: 100%;
-        margin-left: 100px;
+        margin-left: 190px;
         width: 50%;
     }
 
+    @media (max-width: 700px) {
+        .image_about {
+            height: 90%;
+            margin-left: 90px;
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .image_about {
+            height: 100%;
+            margin-left: 190px;
+            width: 50%;
+        }
+    }
 
 
 
     .kilan {
         height: 50%;
-        margin-left: 100px;
-        width: 40%;
+        margin-left: 190px;
+        width: 50%;
     }
 
     @media (max-width: 700px) {
@@ -148,32 +163,35 @@
             height: 90%;
             margin-left: 90px;
             width: 50%;
+            margin-top: 20px;
         }
     }
 
+
+
     .kilan2 {
-        height: 70%;
-        margin-left: 160px;
-        width: 50%;
+        height: 60%;
+        margin-left: 290px;
+        width: 43%;
     }
 
     @media (max-width: 700px) {
         .kilan2 {
-            height: 70%;
+            height: 100%;
             margin-left: 90px;
             width: 50%;
         }
     }
 
     .kilan3 {
-        height: 70%;
-        margin-left: 160px;
-        width: 50%;
+        height: 55%;
+        margin-left: 180px;
+        width: 54%;
     }
 
     @media (max-width: 760px) {
         .kilan3 {
-            height: 70%;
+            height: 100%;
             margin-left: 90px;
             width: 50%;
         }
@@ -248,7 +266,7 @@
             </div>
             <div class="col-sm-5 col-lg-5 col-md-5">
                 <div class=" hotel mx-auto">
-                    <!-- <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about"> -->
+                    <img src="<?= base_url() ?>assets/template/assets/img/isiabout.png" alt="" class="img-fluid image_about">
                 </div>
             </div>
         </div>
@@ -271,7 +289,7 @@
                 value dan ekspresi kreatif para inovator.
             </div>
             <div class="col-md-5">
-                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Mission.png" class="img-fluid kilan" alt="TheEvenet"> -->
+                <img src="<?= base_url() ?>assets/template/assets/img/Mission.png" class="img-fluid kilan" alt="TheEvenet">
             </div>
         </div>
     </div>
@@ -302,7 +320,7 @@
                     content advertisement.</p>
             </div>
             <div class="col-md-6">
-                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Insertclip.png" alt="" class="img-fluid kilan2"> -->
+                <img src="<?= base_url() ?>assets/template/assets/img/Insertclip.png" alt="" class="img-fluid kilan2">
             </div>
         </div>
     </div>
@@ -331,7 +349,7 @@
                     to help build audience trust.</p>
             </div>
             <div class="col-md-5">
-                <!-- <img src="<?= base_url() ?>assets/template/assets/img/Blueprint.png" alt="" class="img-fluid kilan3"> -->
+                <img src="<?= base_url() ?>assets/template/assets/img/Blueprint.png" alt="" class="img-fluid kilan3">
             </div>
         </div>
     </div>
